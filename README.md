@@ -20,3 +20,8 @@
       -v $HOME/.local/share/signal-api:/home/.local/share/signal-cli \
       -e 'MODE=json-rpc' bbernhard/signal-cli-rest-api)
 ```
+5) Verification Step 
+```
+$ curl -X POST -H "Content-Type: application/json" 'http://localhost:8080/v2/send' \
+     -d '{"message": "Test via Signal API!", "number": "+4412345", "recipients": [ "+44987654" ]}'
+```
