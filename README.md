@@ -10,7 +10,8 @@
   Verification Step 
 3) Configure the Signal-Account for the Dockerized Signal Messenger REST API [link](https://github.com/bbernhard/signal-cli-rest-api) 
 4) Run on rpc-mode 
-```docker stop signal-api 
+```
+   docker stop signal-api 
    docker remove signal-api
 ```
 
